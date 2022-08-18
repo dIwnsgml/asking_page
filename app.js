@@ -164,6 +164,7 @@ app.use(function (err, req, res, next) {
   if(secret.place != 'dev'){
     err.message = {}
     res.render('error');
+    
   }
   /* res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {}; */
